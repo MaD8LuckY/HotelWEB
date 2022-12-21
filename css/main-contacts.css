@@ -1,0 +1,81 @@
+.contact_page {
+    background-color: rgb(238, 219, 178);
+    padding: 20px 0;
+
+}
+
+.contact_page .container {
+    display: flex;
+    height: 600px;
+}
+
+.contacts {
+    width: 40%;
+    padding: 10px;
+}
+
+.contacts h2 {
+    padding-top: 30px;
+}
+
+.contacts p{
+    padding: 10px 0;
+}
+
+.contact_page a {
+    display: inline-block;
+    text-align: center;
+
+    width: 70%;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    background-color: rgb(61, 45, 27);
+    color: white;
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.contact_page a:hover {
+    background-color: rgb(220, 189, 87);
+    color: rgb(111, 74, 46);
+    cursor: pointer;
+}
+
+.map {
+    width: 60%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 480px) {
+    .contact_page .container {
+        display: block;
+    }
+
+    .contacts {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    .contacts {
+        width: 35%;
+    }
+
+    .map {
+        width: 65%;
+    }
+}

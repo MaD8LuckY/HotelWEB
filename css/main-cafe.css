@@ -1,0 +1,131 @@
+.cafe_page {
+    background-color: rgb(238, 219, 178);
+    padding: 20px 0;
+}
+
+.cafe_info {
+    text-align: center;
+}
+
+.cafe_info img {
+    width: 80%;
+}
+.cafe_info p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.cafe_menu {
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cafe_menu a{
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.cafe_menu a:hover{
+    color: rgb(164, 164, 164);
+}
+
+.cafe_menu .space-1-3 {
+    margin-top: 20px;
+    margin-bottom: 8vh;
+    padding: 40px 30px;
+    width: 25%;
+    border: 1px solid rgb(244, 234, 192);
+    border-radius: 30px;
+
+    background-color: rgb(244, 234, 192);
+
+    text-align: center;
+
+    font-size: 1.75vw;
+}
+
+.cafe_bar {
+    background-image: url("../img/bar.jpg");
+    background-position: 0 -300px;
+    background-size: cover;
+
+    height: 400px;
+}
+
+.bar_info {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    width: 100%;
+    height: 100%;
+    padding: 140px;
+
+    text-align: center;
+}
+
+.bar_info h2{
+    font-size: 70px;
+}
+
+.bar_info a{
+    color: white;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.bar_info a:hover{
+    color: rgb(94, 94, 94);
+}
+
+@media screen and (max-width: 480px) {
+    .cafe_info img {
+        width: 100%;
+    }
+
+    .cafe_info p {
+        font-size: 3vw;
+    }
+
+    .cafe_menu .space-1-3 {
+        width: 30%;
+        padding: 40px 10px;
+
+        font-size: 3vw;
+    }
+
+    .cafe_bar {
+        background-position: -100px -400px;
+    }
+
+    .bar_info{
+        padding: 90px 30px;
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    .cafe_info img {
+        width: 100%;
+    }
+
+    .cafe_info p {
+        font-size: 2.5vw;
+    }
+
+    .cafe_menu .space-1-3 {
+        width: 30%;
+        padding: 40px 10px;
+
+        font-size: 2vw;
+    }
+
+    .cafe_bar {
+        background-position: 0 0;
+    }
+}

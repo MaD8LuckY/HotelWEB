@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0px;
+	margin: 0;
+
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	color: rgb(30, 30, 30);
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'PT Serif', serif;
+	font-size: 30px;
+}
+
+/*--------
+Header
+--------*/
+
+header {
+	background-color: rgb(238, 219, 178);
+	
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 15px 0;
+	border-bottom: 1px solid rgb(93, 47, 16);
+
+	color: rgb(128, 125, 125);
+	font-size: 14px;
+}
+
+/*--------
+Language
+--------*/
+
+.lang {
+	width: 100px;
+	height: 40px;
+}
+
+option img {
+	object-fit: contain;
+	width: 100%;
+}
+
+
+
+
+/*--------
+Nav
+--------*/
+
+nav ul {
+	list-style-type: none;
+	
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(30, 30, 30);
+	display: block;
+
+	width: 100%;
+	padding: 14px 0px;
+
+	transition: background-color .2s linear, color .2s linear;
+}
+
+.active {
+	background-color: rgb(111, 74, 46);
+	color: rgb(220, 189, 87);
+}
+
+nav a:hover:not(.active){
+	background-color: rgb(111, 74, 46);
+	color: rgb(220, 189, 87);
+}
+
+.lang {
+	background-color: rgb(255, 246, 229);
+	border: 0px;
+	border-radius: 10px;
+
+	text-align: center;
+}
+
+
+/*--------
+Footer
+--------*/
+
+footer {
+	background-color: rgb(111, 74, 46);
+
+	margin: 0;
+	padding: 0;
+	height: 60px;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+footer p {
+	color: rgb(220, 189, 87);
+}
+
+footer ul {
+	list-style-type: none;
+	
+	margin: 0;
+	padding: 0;
+	width: 160px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+
+footer a{
+	display: flex;
+	justify-content: center;
+	width: 40px;
+}
+
+footer img {
+	border: 1px solid rgb(238, 219, 178);
+	border-radius: 25%;
+	padding: 5px;
+	width: 40px;
+
+	background-color: rgb(238, 219, 178);
+}
+
+
+/*--------
+Media
+--------*/
+
+@media screen and (max-width: 480px) {
+	/*--------
+	Header
+	--------*/
+	header {
+		border-bottom: 1px solid black;
+	}
+
+	.info p {
+		display: none;
+	}
+
+	.info {
+		justify-content: center;
+	}
+
+
+	/*--------
+	Nav
+	--------*/
+	
+	nav ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		text-align: center;
+
+		width: 100%;
+		padding: 10px 0;
+	}
+	
+	/*--------
+	Footer
+	--------*/
+}
+

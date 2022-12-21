@@ -1,0 +1,180 @@
+.booking_page {
+    background-color: rgb(238, 219, 178);
+    padding: 20px 0;
+    min-height: 550px;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cheque {
+    width: 64.5%;
+    border-radius: 10px;
+
+    background-color: rgb(251, 248, 239);
+}
+
+.cheque .list_date {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 3vw;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.select-count-rooms {
+    padding: 20px 3vw;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+
+.select-count-rooms div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.count-rooms p{
+    display: block;
+    width: 17vw;
+}
+.count-rooms h4{
+    display: block;
+    width: 4vw;
+}
+
+.count-rooms input{
+    display: inline-block;
+    max-width: 4vw;
+}
+
+.price-list h4{
+    margin: 0 10px;
+}
+
+.total {
+    padding: 20px 3vw;
+
+    display: flex;
+}
+
+.total h4 {
+    margin: 0 10px;
+}
+
+.booking_page form {
+    width: 34.5%;
+    height: 350px;
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: rgb(251, 248, 239);
+}
+
+
+.booking_page input:not([type="submit"]) {
+    padding: 5px 3px;
+    width: 14vw;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: rgb(233, 233, 233);
+    
+    display: inline-block;
+}
+
+.booking_page textarea {
+    width: 29vw;
+    height: 100px;
+
+    background-color: rgb(233, 233, 233);
+}
+
+.booking_page button {
+    display: block;
+
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    background-color: rgb(111, 74, 46);
+    color: rgb(220, 189, 87);
+    cursor: pointer;
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.booking_page button:hover {
+    background-color: rgb(220, 189, 87);
+    color: rgb(111, 74, 46);
+}
+
+@media screen and (max-width: 480px) {
+    .book {
+        display: block;
+    }
+
+    .cheque {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .booking_page form {
+        width: 100%;
+    }
+
+    .booking_page form div {
+        width: 100%;
+    }
+
+    .booking_page input:not([type="submit"]) {
+        width: 100%;
+    }
+
+    .booking_page textarea {
+        width: 100%;
+    }
+
+    .count-rooms p{
+        width: 35vw;
+    }
+
+    .count-rooms input{
+        max-width: 7vw;
+    }
+
+    .booking_page form {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    .booking_page form div {
+        width: 100%;
+    }
+
+    .booking_page input:not([type="submit"]) {
+        width: 100%;
+    }
+
+    .booking_page textarea {
+        width: 100%;
+    }
+
+    .count-rooms p{
+        width: 20vw;
+    }
+
+    .count-rooms input{
+        max-width: 5vw;
+    }
+
+    .booking_page form {
+        height: 400px;
+    }
+}

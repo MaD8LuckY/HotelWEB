@@ -1,0 +1,193 @@
+.price_page {
+    background-color: rgb(238, 219, 178);
+    padding: 0 0 20px;
+}
+
+.price_page form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    font-size: 14px;
+}
+
+.price_page form div {
+    margin-top: 20px;
+}
+
+.price_page input {
+    padding: 5px 15px;
+    width: 250px;
+    border: 2px solid rgb(61, 45, 27);
+    border-radius: 10px;
+}
+
+.price_page button[type="submit"] {
+    text-align: center;
+
+    border: 2px solid rgb(61, 45, 27);
+    border-radius: 10px;
+    width: 250px;
+    padding: 14px;
+    margin-top: 20px;
+
+    background-color: rgb(111, 74, 46);
+    color: rgb(220, 189, 87);
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.price_page button[type="submit"]:hover{
+    background-color: rgb(220, 189, 87);
+    color: rgb(111, 74, 46);
+    cursor: pointer;
+}
+
+.lng-nonecheckbooking,
+.lng-booking-link {
+    display: block;
+
+    text-align: center;
+
+    border: 2px solid rgb(61, 45, 27);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 20px;
+
+    background-color: rgb(111, 74, 46);
+    color: rgb(220, 189, 87);
+    text-decoration: none;
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.lng-booking-link {
+    display: none;
+}
+
+.lng-nonecheckbooking:hover,
+.lng-booking-link:hover {
+    background-color: rgb(220, 189, 87);
+    color: rgb(111, 74, 46);
+    cursor: pointer;
+}
+
+div[class^="room-"] {
+    background-color: rgb(251, 248, 239);
+
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin: 50px 0;
+
+    display: block;
+}
+
+div[class^="room-"] h2{
+    display: inline;
+}
+
+.room_desc {
+    display: flex;
+
+    margin: 10px 0;
+}
+
+.room_desc img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.room_info {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.room_info ul {
+    margin: 0 50px;
+}
+
+.room_info li{
+    margin: 15px 0; 
+
+    list-style-image: url("../img/icons/bath1.png");
+}
+
+.room_info li:first-child {
+    list-style-image: url("../img/icons/square1.png")
+}
+
+.room_info li:last-child {
+    list-style-image: url("../img/icons/bed1.png")
+}
+
+.check-count-room {
+    display: none;
+    
+    font-size: 1.5vw;
+
+    margin: 10px 0 0 0 ;
+}
+
+.check-count-room p{
+    display: inline-block;
+    margin-left: 1.5vw;
+}
+
+.check-count-room h4{
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    div[class^="room-"] h2{
+        display: block;
+    }
+
+    .room_desc {
+        display: block;
+    }
+
+    .room_desc img {
+        width: 100%;
+    }
+
+    .room_info {
+        font-size: 3vw;
+        padding: 5px 0 00;
+    }
+
+    .check-count-room {
+        display: none;
+        
+        font-size: 3.5vw;
+    
+        margin: 10px auto 10px;
+    }
+
+    .check-count-room p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    
+    .room_desc {
+        display: block;
+    }
+
+    .room_desc img {
+        width: 100%;
+    }
+
+    .room_info {
+        font-size: 2.5vw;
+        padding: 10px 0 0 0;
+    }
+
+    .check-count-room {
+        display: none;
+        
+        font-size: 2.5vw;
+    
+        margin: 10px auto 10px;
+    }
+}

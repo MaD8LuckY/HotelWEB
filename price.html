@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css\maket.css">
+	<link rel="stylesheet" href="css\main-price.css">
+	<link rel="icon" href="../Сайт/img/icons/icon.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:
+	wght@700&family=Quicksand&display=swap" rel="stylesheet">
+
+	<title>Номера</title>
+</head>
+<body>
+	<header>
+		<div class="info container"> 
+			<p>+7(123) 456-78-90</p>
+			<select class="lang">
+				<option value="ru">RU</option>
+				<option value="en">EN</option>
+			</select>
+			<p class="lng-address">г. Томск TomskHotel /ул. Ленина, 165</p>
+		</div>
+		<nav class="container">
+			<ul>
+				<li><a href="price.html" class="lng-price active">Номера</a></li>
+				<li><a href="spa.html" class="lng-spa">СПА</a></li>
+				<li><a href="index.html">TomskHotel</a></li>
+				<li><a href="cafe.html" class="lng-cafe">Кафе</a></li>
+				<li><a href="contacts.html" class="lng-contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="price_page">
+		<div class="container">
+			<form>
+				<div>
+					<label for="arrival_date" class="lng-arrival" >Заезд</label><br>
+					<input type="date" id="arrival_date" required>
+				</div>
+
+				<div>
+					<label for="departure_date" class="lng-departure">Выезд</label><br>
+                	<input type="date" id="departure_date" required>
+				</div>
+
+				<div>
+                	<label for="people" class="lng-people">Кол-во гостей</label><br>
+					<input id="people" type="number" min="1" max="20" value="1" required>
+				</div>
+
+				<button type="submit" class="lng-send">Отправить</button>
+            </form>
+
+			<a href="booking.html" class="lng-booking-link">Забронировать</a>
+			<a class="lng-nonecheckbooking" href="none-check-booking.html">Отмена или проверка записи</a>
+
+
+			<div class="room-superiors">
+				<h2 class="lng-room-name-1">Категория "Superior"</h2>
+				<div class="check-count-room">
+					<p class="lng-count-room-superiors">Осталось : </p>
+					<h4>0</h4>
+				</div>
+				<p class="lng-room-price-1">3800 руб.</p>
+				<div class="room_desc">
+					<img src="./img/superior.jpg">
+					<div class="room_info">
+						<p class="lng-room-info-1">В номерах имеются наборы для приготовления 
+							освежающего чая. Выберите одну кровать King или две кровати Twin, 
+							чтобы насладиться спокойным ночным отдыхом и зарядиться энергией 
+							для новых приключений в Томске на следующий день.</p>
+						<ul>
+							<li class="lng-room-scale-1">22м<sup>2</sup></li>
+							<li class="lng-room-bath-1">Ванная комната с индивидуальными принадлежностями</li>
+							<li class="lng-room-bed-1">1 двуспальная кровать или 2 односпальные</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-studios">
+				<h2 class="lng-room-name-2">Категория "Studio"</h2>
+				<div class="check-count-room">
+					<p class="lng-count-room-studios">Осталось : </p>
+					<h4>0</h4>
+				</div>
+				<p class="lng-room-price-2">4500 руб.</p>
+				<div class="room_desc">
+					<img src="./img/studio.jpg">
+					<div class="room_info">
+						<p class="lng-room-info-2">В номере: плазменный телевизор со спутниковым 
+							телевидением, письменный стол со стулом, установлен, сейф, кондиционер, 
+							гладильная доска, wi-fi.<br>
+							Мы предоставляем посуду на кухне, туалетно-косметические принадлежности 
+							(зубная щетка, мыло, шампунь, кондиционер, гель для душа, шапочки для 
+							душа), полотенца на каждого гостя, тапочки и халаты.</p>
+						<ul>
+							<li class="lng-room-scale-2">29м<sup>2</sup></li>
+							<li class="lng-room-bath-2">Ванная комната с индивидуальными принадлежностями</li>
+							<li class="lng-room-bed-2">1 двуспальная кровать или 2 односпальные</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-deluxes">
+				<h2 class="lng-room-name-3">Категория "Deluxe"</h2>
+				<div class="check-count-room">
+					<p class="lng-count-room-deluxes">Осталось : </p>
+					<h4>0</h4>
+				</div>
+				<p class="lng-room-price-3">9000 руб.</p>
+				<div class="room_desc">
+					<img src="./img/deluxe.jpg">
+					<div class="room_info">
+						<p class="lng-room-info-3">Насладитесь комфортным пребыванием, остановившись 
+							в нашем просторном Deluxe. В этом люксе с прихожей, гостиной, спальней, 
+							большой ванной комнатой и гардеробной у вас будет все, чтобы чувствовать 
+							себя как дома. Насладитесь спокойной атмосферой каждой комнаты в этом 
+							люксе.</p>
+						<ul>
+							<li class="lng-room-scale-3">40м<sup>2</sup></li>
+							<li class="lng-room-bath-3">Ванная комната с индивидуальными принадлежностями</li>
+							<li class="lng-room-bed-3">1 двуспальная кровать и 1 односпальные или 3 односпальные</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-bisinessrooms">
+				<h2 class="lng-room-name-4">Категория "Business room"</h2>
+				<div class="check-count-room">
+					<p class="lng-count-room-bisinessrooms">Осталось : </p>
+					<h4>0</h4>
+				</div>
+				<p class="lng-room-price-4">5500 руб.</p>
+				<div class="room_desc">
+					<img src="./img/businessroom.jpg">
+					<div class="room_info">
+						<p class="lng-room-info-4">Насладитесь незабываемым пребыванием в номере с 
+							красивым видом на город, балконом или и тем и другим. Наденьте мягкий 
+							халат и тапочки и воспользуйтесь дополнительными удобствами, 
+							предусмотренными для деловых путешественников. В номерах Business 
+							room также предлагаются все удобства номеров Superior.</p>
+						<ul>
+							<li class="lng-room-scale-4">35м<sup>2</sup></li>
+							<li class="lng-room-bath-4">Ванная комната с индивидуальными принадлежностями</li>
+							<li class="lng-room-bed-4">1 двуспальная кровать</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-honeymoonrooms">
+				<h2 class="lng-room-name-5">Категория "Honeymoon room"</h2>
+				<div class="check-count-room">
+					<p class="lng-count-room-honeymoonrooms">Осталось : </p>
+					<h4>0</h4>
+				</div>
+				<p class="lng-room-price-5">4900 руб.</p>
+				<div class="room_desc">
+					<img src="./img/honeymoonroom.jpg">
+					<div class="room_info">
+						<p class="lng-room-info-5">Дизайн и обстановка номеров для новобрачных более 
+							романтическая, ведь над интерьером трудились профессиональные дизайнеры 
+							и учитывали специфику комнат Honeymoon Room. Все номера Honeymoon 
+							оснащены большими и очень удобными двуспальными кроватями. В сьюте 
+							установлен большой современный плазменный или ЖК-телевизор и DVD-плеер, 
+							а иногда и мультимедийная система.</p>
+						<ul>
+							<li class="lng-room-scale-5">35м<sup>2</sup></li>
+							<li class="lng-room-bath-5">Ванная комната с индивидуальными принадлежностями</li>
+							<li class="lng-room-bed-5">1 двуспальная кровать</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>TomskHotel&#169;</p>
+			<ul>
+				<li><a href="#"><img src="../Сайт/img/icons/vk.png"></a></li>
+				<li><a href="#"><img src="../Сайт/img/icons/telegram.png"></a></li>
+				<li><a href="#"><img src="../Сайт/img/icons/instagram.png"></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="./js/app-lang.js"></script>
+	<script src="./js/lang.js"></script>
+	<script src="./js/app-lang-date-room-check.js"></script>
+	<script src="./js/rooms.js"></script>
+	<script src="./js/app-alert.js"></script>
+</body>
+</html>

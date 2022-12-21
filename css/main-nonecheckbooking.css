@@ -1,0 +1,61 @@
+.nonecheckbooking-page {
+    background-color: rgb(238, 219, 178);
+    padding: 20px 0;
+    min-height: 546px;
+}
+
+.lng-nonecheckbooking-decs {
+    margin-bottom: 20px;
+}
+
+.nonecheckbooking-page form {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.nonecheckbooking-page input{
+    padding: 5px 3px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: rgb(255, 255, 255);
+    
+    display: inline-block;
+}
+
+.nonecheckbooking-page form div{
+    margin: 10px 0;
+}
+
+.nonecheckbooking-page button {
+    text-align: center;
+
+    border: 2px solid rgb(61, 45, 27);
+    border-radius: 10px;
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+
+    background-color: rgb(111, 74, 46);
+    color: rgb(220, 189, 87);
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.nonecheckbooking-page button:hover {
+    background-color: rgb(220, 189, 87);
+    color: rgb(111, 74, 46);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .nonecheckbooking-page .container {
+        text-align: center;
+    }
+
+    .nonecheckbooking-page form {
+        margin: auto;
+    }
+}

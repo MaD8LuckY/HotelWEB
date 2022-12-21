@@ -1,0 +1,115 @@
+.spa_page {
+    background-color: rgb(238, 219, 178);
+    padding: 20px 0;
+}
+
+.spa {
+    background-image: url("../img/spa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.spa_info {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100%;
+    padding: 0 100px;
+}
+
+.services {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 50vh;
+    
+    background-color: rgb(251, 248, 239);
+}
+
+.service p{
+    align-self: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.service img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .spa_page {
+        padding-bottom: 30px;
+    }
+
+    .spa_info {
+        font-size: 3vw;
+    }
+
+    .services {
+        display: block;
+    }
+    
+    .service {
+        display: inline-block;
+        height: 10vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service img {
+        display: none;
+    }
+
+    .service p{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+    .spa_info {
+        font-size: 2.5vw;
+    }
+
+    .services {
+        display: block;
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        height: 30vh;
+        padding-left: 4vw;
+    }
+
+    .service img {
+        width: 50%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .service p{
+        align-self: center;
+        font-size: 30px;
+        padding: 2vw;
+    }
+    
+}

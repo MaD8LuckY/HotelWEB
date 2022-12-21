@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css\maket.css">
+	<link rel="stylesheet" href="css\main-nonecheckbooking.css">
+	<link rel="icon" href="../Сайт/img/icons/icon.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:
+	wght@700&family=Quicksand&display=swap" rel="stylesheet">
+
+	<title>Номера</title>
+</head>
+<body>
+	<header>
+		<div class="info container"> 
+			<p>+7(123) 456-78-90</p>
+			<select class="lang">
+				<option value="ru">RU</option>
+				<option value="en">EN</option>
+			</select>
+			<p class="lng-address">г. Томск TomskHotel /ул. Ленина, 165</p>
+		</div>
+		<nav class="container">
+			<ul>
+				<li><a href="price.html" class="lng-price active">Номера</a></li>
+				<li><a href="spa.html" class="lng-spa">СПА</a></li>
+				<li><a href="index.html">TomskHotel</a></li>
+				<li><a href="cafe.html" class="lng-cafe">Кафе</a></li>
+				<li><a href="contacts.html" class="lng-contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main class="nonecheckbooking-page">
+        <div class="container">
+            <h3 class="lng-nonecheckbooking-decs">Для отмены или проверки записи напишите имя, фамилию и даты заезда и выезда :</h3>
+            <form>
+                <div>
+                    <label for="name" class="lng-name">Имя</label><br>
+                    <input type="text" id="name" placeholder="Иван" required>
+                </div>
+
+                <div>
+                    <label for="last-name" class="lng-last-name">Фамилия</label><br>
+                    <input type="text" id="last-name" placeholder="Иванов" required>
+                </div>
+
+                <div>
+                    <label for="arrival_date" class="lng-arrival">Заезд</label><br>
+                    <input id="arrival_date" type="date" required>
+                </div>
+
+                <div>
+                    <label for="departure_date" class="lng-departure">Выезд</label><br>
+                    <input id="departure_date" type="date" required>
+                </div>
+
+				<button class="lng-check-btn">Проверить бронь</button>
+                <button class="lng-delete-btn">Отменить бронь</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+		<div class="container">
+			<p>TomskHotel&#169;</p>
+			<ul>
+				<li><a href="#"><img src="../Сайт/img/icons/vk.png"></a></li>
+				<li><a href="#"><img src="../Сайт/img/icons/telegram.png"></a></li>
+				<li><a href="#"><img src="../Сайт/img/icons/instagram.png"></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="./js/app-lang.js"></script>
+	<script src="./js/lang.js"></script>
+    <script src="./js/app-nonecheckbooking.js"></script>
+	<script src="./js/app-alert.js"></script>
+</body>
+</html>
