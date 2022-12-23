@@ -13,12 +13,7 @@ function changeLanguage() { // изменение языка
     let lang = select.value;
     localStorage.setItem("sel",lang.toString());
 
-    for (let key in langArr) {
-        let block = document.querySelector('.lng-' + key);
-
-        if(block !== null) 
-            block.innerHTML = langArr[key][lang];
-    }
+    setLanguage();
 }
 
 function setLanguage() {
